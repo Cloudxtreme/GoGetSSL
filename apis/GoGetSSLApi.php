@@ -447,20 +447,6 @@ class GoGetSSLApi
     return $this->call('/orders/ssl/activate/'. (int)$orderId, $getData);
   }
 
-  public function getOrderStatus($orderId)
-  {
-    if(!$this->key)
-    {
-      throw new GoGetSSLAuthException();
-    }
-    else
-    {
-      $getData = array('auth_key' => $this->key);
-    }
-
-    return $this->call('/orders/status/'. (int)$orderId, $getData);
-  }
-
    public function addSandboxAccount($data) {
         if (!$this->key) {
             throw new GoGetSSLAuthException ();
