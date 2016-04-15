@@ -147,13 +147,13 @@ class Gogetssl extends Module {
 					'message' => Language::_("GoGetSSL.!error.gogetssl_approver_email.format", true)
 				)
 			),
-			'gogetssl_csr' => array(
-				'format' => array(
-					'rule' => "isEmpty",
-					'negate' => true,
-					'message' => Language::_("GoGetSSL.!error.gogetssl_csr.format", true)
-				)
-			),
+			//'gogetssl_csr' => array(
+				//'format' => array(
+					//'rule' => "isEmpty",
+					//'negate' => true,
+					//'message' => Language::_("GoGetSSL.!error.gogetssl_csr.format", true)
+				//)
+			//),
 			'gogetssl_webserver_type' => array(
 				'format' => array(
 					'rule' => "isEmpty",
