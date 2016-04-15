@@ -1039,11 +1039,11 @@ class Gogetssl extends Module {
 		return array(
 			'module' => array(),
 			'package' => array("gogetssl_product"),
-			'service' => array("gogetssl_approver_email", "gogetssl_fqdn", "gogetssl_webserver_type", "gogetssl_csr",
-								"gogetssl_orderid", "gogetssl_title", "gogetssl_firstname", "gogetssl_lastname",
-								"gogetssl_address1", "gogetssl_address2", "gogetssl_city", "gogetssl_zip", "gogetssl_state",
-								"gogetssl_country", "gogetssl_email", "gogetssl_number", "gogetssl_fax", "gogetssl_organization",
-								"gogetssl_organization_unit"
+			'service' => array("service.gogetssl_approver_email", "service.gogetssl_fqdn", "service.gogetssl_webserver_type", "service.gogetssl_csr",
+								"service.gogetssl_orderid", "service.gogetssl_title", "service.gogetssl_firstname", "service.gogetssl_lastname",
+								"service.gogetssl_address1", "service.gogetssl_address2", "service.gogetssl_city", "service.gogetssl_zip", "service.gogetssl_state",
+								"service.gogetssl_country", "service.gogetssl_email", "service.gogetssl_number", "service.gogetssl_fax", "service.gogetssl_organization",
+								"service.gogetssl_organization_unit"
 								)
 		);
 	}
