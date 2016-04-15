@@ -23,6 +23,7 @@ class Gogetssl extends Module {
 	private static $authors = array(
 		array('name' => "Phillips Data, Inc.", 'url' => "http://www.blesta.com"),
 		array('name' => "Full Ambit Networks", 'url' => "https://fullambit.net")
+		array('name' => "Evolve Web Hosting", 'url' => "https://www.evolvewebhost.com")
 	);
 	
 	/**
@@ -146,13 +147,13 @@ class Gogetssl extends Module {
 					'message' => Language::_("GoGetSSL.!error.gogetssl_approver_email.format", true)
 				)
 			),
-			//'gogetssl_csr' => array(
-				//'format' => array(
-					//'rule' => "isEmpty",
-					//'negate' => true,
-					//'message' => Language::_("GoGetSSL.!error.gogetssl_csr.format", true)
-				//)
-			//),
+			'gogetssl_csr' => array(
+				'format' => array(
+					'rule' => "isEmpty",
+					'negate' => true,
+					'message' => Language::_("GoGetSSL.!error.gogetssl_csr.format", true)
+				)
+			),
 			'gogetssl_webserver_type' => array(
 				'format' => array(
 					'rule' => "isEmpty",
