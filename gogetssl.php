@@ -10,19 +10,20 @@
  * @license http://www.blesta.com/license/ The Blesta License Agreement
  * @link http://www.blesta.com/ Blesta
  * @link https://www.fullambit.net/
+ * @link https://www.evolvewebhost.com/
  */
 class Gogetssl extends Module {
 	
 	/**
 	 * @var string The version of this module
 	 */
-	private static $version = "2.1.1";
+	private static $version = "2.1.1b";
 	/**
 	 * @var string The authors of this module
 	 */
 	private static $authors = array(
 		array('name' => "Phillips Data, Inc.", 'url' => "http://www.blesta.com"),
-		array('name' => "Full Ambit Networks", 'url' => "https://fullambit.net")
+		array('name' => "Full Ambit Networks", 'url' => "https://fullambit.net"),
 		array('name' => "Evolve Web Hosting", 'url' => "https://www.evolvewebhost.com")
 	);
 	
@@ -1039,7 +1040,7 @@ class Gogetssl extends Module {
 	public function getEmailTags() {
 		return array(
 			'module' => array(),
-			'package' => array("gogetssl_product"),
+			'package' => array("service.gogetssl_product"),
 			'service' => array("service.gogetssl_approver_email", "service.gogetssl_fqdn", "service.gogetssl_webserver_type", "service.gogetssl_csr",
 								"service.gogetssl_orderid", "service.gogetssl_title", "service.gogetssl_firstname", "service.gogetssl_lastname",
 								"service.gogetssl_address1", "service.gogetssl_address2", "service.gogetssl_city", "service.gogetssl_zip", "service.gogetssl_state",
