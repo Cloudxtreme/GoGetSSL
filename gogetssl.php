@@ -215,8 +215,8 @@ class Gogetssl extends Module {
 			'admin_email' => $vars->gogetssl_email,
 			'admin_city' => $vars->gogetssl_city,
 			'admin_country' => $vars->gogetssl_country,
-			'admin_organization' => $vars->gogetssl_organization,
-			'admin_fax' => $vars->gogetssl_fax,
+			//'admin_organization' => $vars->gogetssl_organization,
+			//'admin_fax' => $vars->gogetssl_fax,
 			
 			'tech_firstname' => $vars->gogetssl_firstname,
 			'tech_lastname' => $vars->gogetssl_lastname,
@@ -225,11 +225,11 @@ class Gogetssl extends Module {
 			'tech_email' => $vars->gogetssl_email,
 			'tech_city' => $vars->gogetssl_city,
 			'tech_country' => $vars->gogetssl_country,
-			'tech_organization' => $vars->gogetssl_organization,
-			'tech_fax' => $vars->gogetssl_fax,
+			//'tech_organization' => $vars->gogetssl_organization,
+			//'tech_fax' => $vars->gogetssl_fax,
 			
-			'org_name' => $vars->gogetssl_organization,
-			'org_division' => $vars->gogetssl_organization_unit,
+			//'org_name' => $vars->gogetssl_organization,
+			//'org_division' => $vars->gogetssl_organization_unit,
 			'org_addressline1' => $vars->gogetssl_address1,
 			'org_addressline2' => $vars->gogetssl_address2,
 			'org_city' => $vars->gogetssl_city,
@@ -351,11 +351,11 @@ class Gogetssl extends Module {
 				'value' => $vars["gogetssl_zip"],
 				'encrypted' => 0
 			),
-			array(
-				'key' => "gogetssl_state",
-				'value' => $vars["gogetssl_state"],
-				'encrypted' => 0
-			),
+			//array(
+			//	'key' => "gogetssl_state",
+			//	'value' => $vars["gogetssl_state"],
+			//	'encrypted' => 0
+			//),
 			array(
 				'key' => "gogetssl_country",
 				'value' => $vars["gogetssl_country"],
@@ -371,21 +371,21 @@ class Gogetssl extends Module {
 				'value' => $vars["gogetssl_number"],
 				'encrypted' => 0
 			),
-			array(
-				'key' => "gogetssl_fax",
-				'value' => $vars["gogetssl_fax"],
-				'encrypted' => 0
-			),
-			array(
-				'key' => "gogetssl_organization",
-				'value' => $vars["gogetssl_organization"],
-				'encrypted' => 0
-			),
-			array(
-				'key' => "gogetssl_organization_unit",
-				'value' => $vars["gogetssl_organization_unit"],
-				'encrypted' => 0
-			)
+			//array(
+			//	'key' => "gogetssl_fax",
+			//	'value' => $vars["gogetssl_fax"],
+			//	'encrypted' => 0
+			//),
+			//array(
+			//	'key' => "gogetssl_organization",
+			//	'value' => $vars["gogetssl_organization"],
+			//	'encrypted' => 0
+			//),
+			//array(
+			//	'key' => "gogetssl_organization_unit",
+			//	'value' => $vars["gogetssl_organization_unit"],
+			//	'encrypted' => 0
+			//)
 		);
 	}
 	
@@ -423,7 +423,8 @@ class Gogetssl extends Module {
 			$data = array(
 				'csr' => $vars["gogetssl_csr"],
 				'approver_email' => $vars["gogetssl_approver_email"],
-				'webserver_type' => $vars["gogetssl_webserver_type"]
+				'webserver_type' => $vars["gogetssl_webserver_type"],
+				'orderid' => $vars["gogetssl_orderid"]
 			);
 		
 			$this->log($row->meta->api_username . "|ssl-reissue", serialize($data), "input", true);
@@ -500,11 +501,11 @@ class Gogetssl extends Module {
 				'value' => $service_fields->gogetssl_zip,
 				'encrypted' => 0
 			),
-			array(
-				'key' => "gogetssl_state",
-				'value' => $service_fields->gogetssl_state,
-				'encrypted' => 0
-			),
+			//array(
+			//	'key' => "gogetssl_state",
+			//	'value' => $service_fields->gogetssl_state,
+			//	'encrypted' => 0
+			//),
 			array(
 				'key' => "gogetssl_country",
 				'value' => $service_fields->gogetssl_country,
@@ -520,21 +521,21 @@ class Gogetssl extends Module {
 				'value' => $service_fields->gogetssl_number,
 				'encrypted' => 0
 			),
-			array(
-				'key' => "gogetssl_fax",
-				'value' => $service_fields->gogetssl_fax,
-				'encrypted' => 0
-			),
-			array(
-				'key' => "gogetssl_organization",
-				'value' => $service_fields->gogetssl_organization,
-				'encrypted' => 0
-			),
-			array(
-				'key' => "gogetssl_organization_unit",
-				'value' => $service_fields->gogetssl_organization_unit,
-				'encrypted' => 0
-			)
+			//array(
+			//	'key' => "gogetssl_fax",
+			//	'value' => $service_fields->gogetssl_fax,
+			//	'encrypted' => 0
+			//),
+			//array(
+			//	'key' => "gogetssl_organization",
+			//	'value' => $service_fields->gogetssl_organization,
+			//	'encrypted' => 0
+			//),
+			//array(
+			//	'key' => "gogetssl_organization_unit",
+			//	'value' => $service_fields->gogetssl_organization_unit,
+			//	'encrypted' => 0
+			//)
 		);
 	}
 	
@@ -695,11 +696,11 @@ class Gogetssl extends Module {
 				'value' => $service_fields->gogetssl_zip,
 				'encrypted' => 0
 			),
-			array(
-				'key' => "gogetssl_state",
-				'value' => $service_fields->gogetssl_state,
-				'encrypted' => 0
-			),
+			//array(
+			//	'key' => "gogetssl_state",
+			//	'value' => $service_fields->gogetssl_state,
+			//	'encrypted' => 0
+			//),
 			array(
 				'key' => "gogetssl_country",
 				'value' => $service_fields->gogetssl_country,
@@ -715,21 +716,21 @@ class Gogetssl extends Module {
 				'value' => $service_fields->gogetssl_number,
 				'encrypted' => 0
 			),
-			array(
-				'key' => "gogetssl_fax",
-				'value' => $service_fields->gogetssl_fax,
-				'encrypted' => 0
-			),
-			array(
-				'key' => "gogetssl_organization",
-				'value' => $service_fields->gogetssl_organization,
-				'encrypted' => 0
-			),
-			array(
-				'key' => "gogetssl_organization_unit",
-				'value' => $service_fields->gogetssl_organization_unit,
-				'encrypted' => 0
-			)
+			//array(
+			//	'key' => "gogetssl_fax",
+			//	'value' => $service_fields->gogetssl_fax,
+			//	'encrypted' => 0
+			//),
+			//array(
+			//	'key' => "gogetssl_organization",
+			//	'value' => $service_fields->gogetssl_organization,
+			//	'encrypted' => 0
+			//),
+			//array(
+			//	'key' => "gogetssl_organization_unit",
+			//	'value' => $service_fields->gogetssl_organization_unit,
+			//	'encrypted' => 0
+			//)
 		);
 	}
 	
@@ -1170,10 +1171,10 @@ class Gogetssl extends Module {
 		$fields->setField($gogetssl_city);
 		unset($gogetssl_city);
 		
-		//$gogetssl_zip = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_zip", true), "gogetssl_zip");
-		//$gogetssl_zip->attach($fields->fieldText("gogetssl_zip", $this->Html->ifSet($vars->gogetssl_zip), array('id' => "gogetssl_zip")));
-		//$fields->setField($gogetssl_zip);
-		//unset($gogetssl_zip);
+		$gogetssl_zip = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_zip", true), "gogetssl_zip");
+		$gogetssl_zip->attach($fields->fieldText("gogetssl_zip", $this->Html->ifSet($vars->gogetssl_zip), array('id' => "gogetssl_zip")));
+		$fields->setField($gogetssl_zip);
+		unset($gogetssl_zip);
 		
 		//$gogetssl_state = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_state", true), "gogetssl_state");
 		//$gogetssl_state->attach($fields->fieldText("gogetssl_state", $this->Html->ifSet($vars->gogetssl_state), array('id' => "gogetssl_state")));
@@ -1325,9 +1326,12 @@ class Gogetssl extends Module {
 		
 		if (empty($vars)) {
 			$vars = array(
+				'use_module' => true,
+				'client_id' => $service->client_id,
 				'gogetssl_webserver_type' => $service_fields->gogetssl_webserver_type,
 				'gogetssl_approver_email' => $service_fields->gogetssl_approver_email,
-				'gogetssl_csr' => $service_fields->gogetssl_csr
+				'gogetssl_csr' => $service_fields->gogetssl_csr,
+				'gogetssl_orderid' => $service_fields->gogetssl_orderid
 			);
 		}
 		
