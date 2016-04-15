@@ -60,10 +60,10 @@ $lang['GoGetSSL.edit_row.add_btn'] = "Update Reseller";
 $lang['GoGetSSL.package_fields.product'] = "Product";
 
 // Service fields
-$lang['GoGetSSL.service_field.gogetssl_fqdn'] = "Host / Domain";
+$lang['GoGetSSL.service_field.gogetssl_fqdn'] = "Host / Domain (required)";
 $lang['GoGetSSL.service_field.gogetssl_csr'] = "CSR content";
 $lang['GoGetSSL.service_field.gogetssl_webserver_type'] = "Webserver type";
-$lang['GoGetSSL.service_field.gogetssl_approver_email'] = "Approver E-Mail";
+$lang['GoGetSSL.service_field.gogetssl_approver_email'] = "Approver E-Mail (required)";
 
 $lang['GoGetSSL.service_field.gogetssl_title'] = "Title";
 $lang['GoGetSSL.service_field.gogetssl_firstname'] = "First name";
