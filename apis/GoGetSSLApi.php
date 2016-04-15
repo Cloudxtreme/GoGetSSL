@@ -615,19 +615,3 @@ class GoGetSSLAuthException extends Exception {
     parent::__construct('Please authorize first');
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
