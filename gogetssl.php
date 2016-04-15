@@ -1170,15 +1170,15 @@ class Gogetssl extends Module {
 		$fields->setField($gogetssl_city);
 		unset($gogetssl_city);
 		
-		$gogetssl_zip = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_zip", true), "gogetssl_zip");
-		$gogetssl_zip->attach($fields->fieldText("gogetssl_zip", $this->Html->ifSet($vars->gogetssl_zip), array('id' => "gogetssl_zip")));
-		$fields->setField($gogetssl_zip);
-		unset($gogetssl_zip);
+		//$gogetssl_zip = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_zip", true), "gogetssl_zip");
+		//$gogetssl_zip->attach($fields->fieldText("gogetssl_zip", $this->Html->ifSet($vars->gogetssl_zip), array('id' => "gogetssl_zip")));
+		//$fields->setField($gogetssl_zip);
+		//unset($gogetssl_zip);
 		
-		$gogetssl_state = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_state", true), "gogetssl_state");
-		$gogetssl_state->attach($fields->fieldText("gogetssl_state", $this->Html->ifSet($vars->gogetssl_state), array('id' => "gogetssl_state")));
-		$fields->setField($gogetssl_state);
-		unset($gogetssl_state);
+		//$gogetssl_state = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_state", true), "gogetssl_state");
+		//$gogetssl_state->attach($fields->fieldText("gogetssl_state", $this->Html->ifSet($vars->gogetssl_state), array('id' => "gogetssl_state")));
+		//$fields->setField($gogetssl_state);
+		//unset($gogetssl_state);
 		
 		$gogetssl_country = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_country", true), "gogetssl_country");
 		$gogetssl_country->attach($fields->fieldText("gogetssl_country", $this->Html->ifSet($vars->gogetssl_country), array('id' => "gogetssl_country")));
@@ -1195,20 +1195,20 @@ class Gogetssl extends Module {
 		$fields->setField($gogetssl_number);
 		unset($gogetssl_number);
 		
-		$gogetssl_fax = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_fax", true), "gogetssl_fax");
-		$gogetssl_fax->attach($fields->fieldText("gogetssl_fax", $this->Html->ifSet($vars->gogetssl_fax), array('id' => "gogetssl_fax")));
-		$fields->setField($gogetssl_fax);
-		unset($gogetssl_fax);
+		//$gogetssl_fax = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_fax", true), "gogetssl_fax");
+		//$gogetssl_fax->attach($fields->fieldText("gogetssl_fax", $this->Html->ifSet($vars->gogetssl_fax), array('id' => "gogetssl_fax")));
+		//$fields->setField($gogetssl_fax);
+		//unset($gogetssl_fax);
 		
-		$gogetssl_organization = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_organization", true), "gogetssl_organization");
-		$gogetssl_organization->attach($fields->fieldText("gogetssl_organization", $this->Html->ifSet($vars->gogetssl_organization), array('id' => "gogetssl_organization")));
-		$fields->setField($gogetssl_organization);
-		unset($gogetssl_organization);
+		//$gogetssl_organization = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_organization", true), "gogetssl_organization");
+		//$gogetssl_organization->attach($fields->fieldText("gogetssl_organization", $this->Html->ifSet($vars->gogetssl_organization), array('id' => "gogetssl_organization")));
+		//$fields->setField($gogetssl_organization);
+		//unset($gogetssl_organization);
 		
-		$gogetssl_organization_unit = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_organization_unit", true), "gogetssl_organization_unit");
-		$gogetssl_organization_unit->attach($fields->fieldText("gogetssl_organization_unit", $this->Html->ifSet($vars->gogetssl_organization_unit), array('id' => "gogetssl_organization_unit")));
-		$fields->setField($gogetssl_organization_unit);
-		unset($gogetssl_organization_unit);
+		//$gogetssl_organization_unit = $fields->label(Language::_("GoGetSSL.service_field.gogetssl_organization_unit", true), "gogetssl_organization_unit");
+		//$gogetssl_organization_unit->attach($fields->fieldText("gogetssl_organization_unit", $this->Html->ifSet($vars->gogetssl_organization_unit), array('id' => "gogetssl_organization_unit")));
+		//$fields->setField($gogetssl_organization_unit);
+		//unset($gogetssl_organization_unit);
 		
 		return $fields;
 	}
